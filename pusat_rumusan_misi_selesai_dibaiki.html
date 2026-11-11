@@ -1,0 +1,102 @@
+<!doctype html><html lang="ms"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pusat Rumusan – Misi Selesai!</title>
+<style>
+:root{--mint:#dff4e8;--lav:#eee5ff;--yellow:#fff0bb;--cream:#fffdf3;--ink:#364b43}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(125deg,#e7f7ee,#fff9e9 48%,#f0eaff);color:var(--ink);font:16px/1.55 "Trebuchet MS",Arial,sans-serif}
+main{max-width:1040px;margin:auto;padding:20px 16px 45px}
+header,section{border-radius:24px;background:#ffffffd9;padding:22px;margin-bottom:19px;box-shadow:0 6px 20px #78988718}
+header{text-align:center;background:linear-gradient(110deg,#e1f6ea,#fff9e6,#eee5ff)}
+header h1{font-size:clamp(1.8rem,5vw,2.8rem);color:#47785f;margin:10px 0}
+.kicker{display:inline-block;background:#fff0bb;padding:7px 17px;border-radius:30px;font-weight:bold}
+.mascot{font-size:45px;animation:float 3s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-7px)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+h2{font-size:1.35rem;color:#47785f;margin:0 0 10px}.muted{color:#67766e}
+.question{background:var(--cream);border:1px solid #f0e5c8;padding:15px;border-radius:16px;margin:12px 0}
+.question h3{font-size:1rem;margin:0 0 10px}.choice{display:block;background:white;padding:10px 12px;border-radius:12px;margin:7px 0;cursor:pointer;border:1px solid #e5e7e1}
+.choice:has(input:checked){border:2px solid #6aaf86;background:#f0fff5}.choice input{accent-color:#539e71}
+button{font:inherit;font-weight:bold;padding:11px 17px;border:0;border-radius:12px;cursor:pointer;background:#7cbd95;color:#183e29;margin:5px 7px 5px 0}
+button.secondary{background:var(--lav);color:#594a7a}button.yellow{background:var(--yellow);color:#594a20}
+button:focus-visible,input:focus-visible{outline:3px solid #a17ed1;outline-offset:2px}
+.feedback{display:none;padding:14px;border-radius:14px;margin-top:12px;background:#e3f5e8}.feedback.show{display:block}.feedback.warn{background:#fff0d9}
+.reflect label{display:block;padding:12px;background:#faf8ff;border-radius:13px;margin:8px 0;cursor:pointer}.reflect input{accent-color:#7cbd95}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.card{border-radius:18px;padding:17px}.card:nth-child(1){background:var(--mint)}.card:nth-child(2){background:var(--lav)}.card:nth-child(3){background:var(--yellow)}.card h3{margin:4px 0}.card p{margin:5px 0}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:15px 0}.fields label{font-weight:bold}.fields input{display:block;width:100%;padding:10px;margin-top:4px;border:1px solid #bccfc4;border-radius:10px;font:inherit}
+.certificate{margin:18px auto 0;max-width:780px;min-height:440px;border:7px double #9cbd9e;border-radius:17px;background:radial-gradient(circle at top left,#fff4c8,transparent 40%),#fffef7;text-align:center;padding:30px 20px;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.certificate h2{font-family:Georgia,serif;font-size:clamp(1.4rem,4vw,2rem);color:#47785f}
+.certname{font-family:Georgia,serif;font-size:clamp(1.5rem,4vw,2rem);color:#72589a;border-bottom:1px solid #aac5b2;min-width:min(90%,460px);padding:10px}
+.certdetails{display:flex;gap:30px;justify-content:center;flex-wrap:wrap;margin:18px 0}.certdetails>div{min-width:120px;border-bottom:1px solid #aac5b2}
+.signature{margin-top:14px;border-top:1px solid #aac5b2;padding:6px 20px}.small{font-size:.85rem;color:#68786d}
+@media(max-width:680px){.cards,.fields{grid-template-columns:1fr}header,section{padding:17px}.certificate{padding:25px 10px}}
+@media print{@page{size:A4 landscape;margin:12mm}body{background:white}main{max-width:none;padding:0}header,section:not(#sijil),#sijil>h2,#sijil>.muted,#sijil>.fields,#sijil>.controls,footer{display:none!important}#sijil{padding:0;margin:0;box-shadow:none;background:white}.certificate{max-width:none;min-height:95vh;margin:0;border:8px double #9cbd9e;break-inside:avoid}}
+</style></head><body><main>
+<header><div class="mascot" aria-label="Maskot detektif">🕵️🔎</div><h1>PUSAT RUMUSAN – MISI SELESAI!</h1><p>Tahniah, Detektif Cilik! Mari semak kefahaman, buat refleksi dan terima sijil penghargaan.</p></header>
+<section id="kuiz"><h2>🧩 1. Kuiz Mini Penutup</h2><p class="muted">Jawab tepat tiga soalan berikut.</p>
+<form id="quiz">
+<div class="question"><h3>Soalan 1: Apakah jenis kata ganda bagi perkataan “buku-buku”?</h3>
+<label class="choice"><input type="radio" name="q1" value="A"> A. Kata ganda penuh</label><label class="choice"><input type="radio" name="q1" value="B"> B. Kata ganda separa</label><label class="choice"><input type="radio" name="q1" value="C"> C. Kata ganda berentak</label></div>
+<div class="question"><h3>Soalan 2: Perkataan “dedaun” tergolong dalam jenis kata ganda yang manakah?</h3>
+<label class="choice"><input type="radio" name="q2" value="A"> A. Kata ganda penuh</label><label class="choice"><input type="radio" name="q2" value="B"> B. Kata ganda separa</label><label class="choice"><input type="radio" name="q2" value="C"> C. Kata ganda berentak</label></div>
+<div class="question"><h3>Soalan 3: Pilih ayat yang menggunakan kata ganda berentak dengan betul.</h3>
+<label class="choice"><input type="radio" name="q3" value="A"> A. Ibu membeli lauk-pauk di pasar.</label><label class="choice"><input type="radio" name="q3" value="B"> B. Adik menyusun buku-buku di rak.</label><label class="choice"><input type="radio" name="q3" value="C"> C. Ayah melihat dedaun di halaman rumah.</label></div>
+<button type="submit">Hantar Jawapan</button><button type="button" class="secondary" id="retry">Cuba Lagi</button>
+</form><div class="feedback" id="result" role="status" aria-live="polite"></div></section>
+<section id="refleksi"><h2>💭 2. Refleksi Detektif</h2><p><b>Bagaimanakah tahap kefahaman kamu selepas menyelesaikan Misi Detektif Kata Ganda?</b></p>
+<div class="reflect"><label><input type="radio" name="reflect" value="1"> 😊 Saya sudah faham dan boleh memberikan contoh kata ganda.</label>
+<label><input type="radio" name="reflect" value="2"> 🙂 Saya faham tetapi masih memerlukan latihan.</label>
+<label><input type="radio" name="reflect" value="3"> 🤔 Saya perlu mengulang kaji nota sekali lagi.</label></div>
+<button type="button" id="reflectBtn">Hantar Refleksi</button><div class="feedback" id="reflectResult" role="status" aria-live="polite"></div></section>
+<section id="rumusan"><h2>📚 3. Rumusan Pembelajaran</h2><p class="muted">Tiga petunjuk utama untuk mengingati kata ganda.</p><div class="cards">
+<div class="card"><div style="font-size:32px">📚</div><h3>Kata Ganda Penuh</h3><p>Perkataan yang diulang secara keseluruhan.</p><b>buku-buku, rumah-rumah</b></div>
+<div class="card"><div style="font-size:32px">🍃</div><h3>Kata Ganda Separa</h3><p>Perkataan yang mengalami pengulangan sebahagian kata dasar.</p><b>dedaun, lelaki</b></div>
+<div class="card"><div style="font-size:32px">🎶</div><h3>Kata Ganda Berentak</h3><p>Perkataan yang mengalami pengulangan dengan perubahan bunyi tertentu.</p><b>lauk-pauk, kuih-muih</b></div>
+</div></section>
+<section id="sijil"><h2>🏆 4. Sijil Penghargaan Detektif Kata Ganda</h2><p class="muted">Sijil ini menghargai usaha dan penyertaan, bukan pengesahan penguasaan keseluruhan topik.</p>
+<div class="fields"><label>Nama murid<input id="name" placeholder="Nama penuh murid"></label><label>Kelas<input id="class" placeholder="Contoh: 5 Bestari"></label><label>Tarikh<input id="date" type="date"></label><label>Nama guru / tandatangan guru<input id="teacher" placeholder="Nama guru"></label></div>
+<div class="controls"><button type="button" id="generate">Jana Sijil Saya</button><button type="button" class="yellow" id="print">Cetak Sijil / Simpan sebagai PDF</button><p class="small">Pilih “Simpan sebagai PDF” dalam tetingkap cetakan untuk menyimpan sijil.</p></div>
+<div class="certificate"><div style="font-size:38px">🏆 🎖️ 🕵️ ⭐</div><h2>SIJIL PENGHARGAAN<br>DETEKTIF KATA GANDA</h2><p>Dengan ini dianugerahkan kepada</p><div class="certname" id="certName">Nama Murid</div>
+<p>Sekalung tahniah atas usaha dan kesungguhan anda menyelesaikan Misi Detektif Kata Ganda!</p>
+<div class="certdetails"><div><b>Kelas</b><br><span id="certClass">—</span></div><div><b>Tarikh</b><br><span id="certDate">—</span></div></div>
+<div class="signature"><b id="certTeacher">________________</b><br><small>Tandatangan Guru</small></div><p>🌟 Teruskan usaha dan semangat belajar! 🌟</p></div></section>
+<footer style="text-align:center;color:#68786d">Misi selesai! Teruskan menjadi detektif bahasa yang hebat.</footer>
+</main>
+<script>
+"use strict";
+const $=id=>document.getElementById(id);
+const key=["A","B","A"];
+const explain=[
+'Soalan 1: “buku-buku” ialah kata ganda penuh kerana seluruh kata dasar diulang.',
+'Soalan 2: “dedaun” ialah kata ganda separa kerana hanya sebahagian kata dasar diulang.',
+'Soalan 3: “lauk-pauk” ialah kata ganda berentak kerana terdapat perubahan bunyi.'
+];
+$("quiz").addEventListener("submit",e=>{
+e.preventDefault();
+const selected=[1,2,3].map(n=>document.querySelector('input[name="q'+n+'"]:checked'));
+const out=$("result");out.className="feedback show";
+if(selected.some(x=>!x)){out.className+=" warn";out.textContent="Sila jawab ketiga-tiga soalan sebelum menghantar jawapan.";return;}
+let score=selected.filter((x,i)=>x.value===key[i]).length;
+out.className=score===3?"feedback show":"feedback show warn";
+const title=document.createElement("strong");title.textContent="Markah kamu: "+score+" / 3. ";
+out.textContent="";out.appendChild(title);out.appendChild(document.createTextNode(score===3?"🎉 Tahniah! Semua jawapan kamu betul!":"Bagus kerana mencuba! Baca penerangan dan cuba lagi."));
+const ul=document.createElement("ul");
+selected.forEach((x,i)=>{const li=document.createElement("li");li.textContent=(x.value===key[i]?"✓ Betul. ":"Perlu semak. ")+explain[i];ul.appendChild(li)});
+out.appendChild(ul);
+});
+$("retry").addEventListener("click",()=>{$("quiz").reset();$("result").className="feedback";$("result").textContent="";});
+$("reflectBtn").addEventListener("click",()=>{
+const selected=document.querySelector('input[name="reflect"]:checked');
+const out=$("reflectResult");out.className="feedback show";
+const messages={"1":"Hebat! Terus gunakan pengetahuan kamu dalam pembacaan dan penulisan.","2":"Bagus! Teruskan berlatih sedikit demi sedikit. Kamu pasti boleh!","3":"Tidak mengapa. Ulang kaji mengikut keselesaan kamu. Setiap usaha membawa kemajuan."};
+out.textContent=selected?messages[selected.value]:"Pilih satu pernyataan yang menggambarkan kefahaman kamu. Tiada jawapan yang salah.";
+});
+const today=new Date(); $("date").value=[today.getFullYear(),String(today.getMonth()+1).padStart(2,"0"),String(today.getDate()).padStart(2,"0")].join("-");
+let generated=false;
+$("generate").addEventListener("click",()=>{
+const name=$("name").value.trim(),cls=$("class").value.trim(),date=$("date").value,teacher=$("teacher").value.trim();
+if(!name||!cls||!date||!teacher){alert("Sila lengkapkan nama murid, kelas, tarikh dan nama guru.");return;}
+$("certName").textContent=name;$("certClass").textContent=cls;
+$("certDate").textContent=new Date(date+"T12:00:00").toLocaleDateString("ms-MY",{day:"numeric",month:"long",year:"numeric"});
+$("certTeacher").textContent=teacher;generated=true;
+document.querySelector(".certificate").scrollIntoView({behavior:"smooth",block:"center"});
+});
+$("print").addEventListener("click",()=>{if(!generated){alert("Sila jana sijil dahulu.");return;}window.print();});
+</script></body></html>
